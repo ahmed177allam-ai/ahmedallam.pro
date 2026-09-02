@@ -1,0 +1,240 @@
+:root {
+    --bg-dark: #121212;
+    --card-bg: #1e1e1e;
+    --cyan: #00FFC2;
+    --gold: #FFB800;
+    --white: #FFFFFF;
+    --gray: #a0a0a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--white);
+    line-height: 1.6;
+}
+
+/* الناڤبار */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    border-bottom: 1px solid #222;
+    background-color: rgba(18, 18, 18, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-accent {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--cyan);
+    letter-spacing: -2px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    font-size: 1.1rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.brand-name .pro {
+    color: var(--cyan);
+}
+
+.tagline {
+    font-size: 0.6rem;
+    color: var(--gray);
+    letter-spacing: 1.5px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--cyan);
+}
+
+.btn-contact {
+    border: 1px solid var(--cyan);
+    padding: 8px 18px;
+    border-radius: 6px;
+    color: var(--cyan) !important;
+}
+
+.btn-contact:hover {
+    background-color: var(--cyan);
+    color: var(--bg-dark) !important;
+}
+
+/* الهيرو */
+.hero {
+    text-align: center;
+    padding: 5rem 1rem;
+    background: radial-gradient(circle at center, #1a2a26 0%, var(--bg-dark) 70%);
+}
+
+.badge {
+    background-color: rgba(0, 255, 194, 0.1);
+    color: var(--cyan);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    border: 1px solid var(--cyan);
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin: 1.5rem 0;
+    font-weight: 900;
+}
+
+.highlight {
+    color: var(--cyan);
+}
+
+.hero p {
+    color: var(--gray);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-primary {
+    background-color: var(--cyan);
+    color: var(--bg-dark);
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn-secondary {
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* المعرض */
+.portfolio-section {
+    padding: 4rem 5%;
+}
+
+.portfolio-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.gold-text {
+    color: var(--gold);
+    font-size: 1rem;
+    display: block;
+}
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 3rem;
+}
+
+.filter-btn {
+    background: var(--card-bg);
+    color: var(--white);
+    border: 1px solid #333;
+    padding: 8px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--cyan);
+    color: var(--bg-dark);
+    border-color: var(--cyan);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--cyan);
+}
+
+.card-media {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--white);
+}
+
+.card p {
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+/* الفوتر */
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #222;
+    color: var(--gray);
+}
+
+.domain-tag {
+    color: var(--gold);
+    font-weight: bold;
+    margin-top: 5px;
+}
