@@ -10,18 +10,18 @@
 const SITE_CONFIG = {
   // ---------- بيانات التواصل ----------
   email: "hello@ahmedallam.pro",          // إيميلك الحقيقي
-  phoneDisplay: "+20 1XX XXX XXXX",       // الرقم اللي هيتعرض على الموقع (شكل مقروء)
-  whatsappNumber: "201XXXXXXXXX",         // نفس الرقم لكن بالصيغة الدولية من غير + أو مسافات (مثال: 201012345678)
+  phoneDisplay: "+20 112 263 4324",       // الرقم اللي هيتعرض على الموقع (شكل مقروء)
+  whatsappNumber: "201122634324",         // نفس الرقم لكن بالصيغة الدولية من غير + أو مسافات (مثال: 201012345678)
 
   // ---------- روابط السوشيال ميديا ----------
   // سيب أي لينك فاضي "" لو مش عايز الأيقونة بتاعته تظهر خالص
   social: {
-    instagram: "",
+    instagram: "https://www.instagram.com/ahmedallam.pro/",
     tiktok: "",
     youtube: "",
     behance: "",
-    facebook: "",
-    linkedin: "",
+    facebook: "https://www.facebook.com/profile.php?id=61593950945065",
+    linkedin: "https://www.linkedin.com/in/ahmed-allam-pro-b57826433/",
   },
 
   // ---------- موقع العمل (اختياري) ----------
