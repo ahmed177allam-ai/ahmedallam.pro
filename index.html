@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)file:///C:/Users/Ahmed/OneDrive/Documents/Default%20Project/ahmedallam.pro-main/index.html -->
+<html lang="en" dir="ltr" data-theme="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Allam Pro — Video Editing &amp; Photography</title>
+  <meta name="description" content="Ahmed Allam Pro — reels, real estate videos, podcasts, gaming content, product and ad photography.">
+  <meta property="og:title" content="Ahmed Allam Pro — Creative Visual Production">
+  <meta property="og:description" content="Professional video editing and photography: reels, real estate, podcasts, gaming, product and ad photography.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ahmedallam.pro">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='95' fill='%231a1a1a'/%3E%3Ctext x='70' y='130' font-size='80' font-family='Arial,sans-serif' font-weight='900' fill='%2300ffc2'%3EA%3C/text%3E%3Ctext x='130' y='130' font-size='80' font-family='Arial,sans-serif' font-weight='900' fill='%23ffffff'%3EA%3C/text%3E%3Ccircle cx='100' cy='100' r='18' fill='none' stroke='%23ffffff' stroke-width='3'/%3E%3Cpath d='M100 82 L100 118 M82 100 L118 100' stroke='%23ffffff' stroke-width='2'/%3E%3C/svg%3E">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap');
+
+    :root {
+      --bg: #0a0b0c;
+      --bg-soft: #0f1012;
+      --surface: #151618;
+      --surface-2: #1c1e21;
+      --border: #2a2c30;
+      --teal: #00ffc2;
+      --teal-dim: rgba(0, 255, 194, 0.14);
+      --amber: #ffb800;
+      --amber-dim: rgba(255, 184, 0, 0.14);
+      --white: #f4f6f7;
+      --muted: #8b929a;
+      --muted-2: #5b6167;
+      --shadow: rgba(0, 0, 0, 0.4);
+      --shadow-lg: rgba(0, 0, 0, 0.5);
+
+      --font-ar: 'Inter', 'Segoe UI', sans-serif;
+      --font-en: 'Space Grotesk', sans-serif;
+
+      --container: 1180px;
+      --radius: 16px;
+      --radius-sm: 10px;
+    }
+
+    [data-theme="light"] {
+      --bg: #f8f9fa;
+      --bg-soft: #ffffff;
+      --surface: #ffffff;
+      --surface-2: #f0f2f4;
+      --border: #e2e5e9;
+      --teal: #00b386;
+      --teal-dim: rgba(0, 179, 134, 0.12);
+      --amber: #e69b00;
+      --amber-dim: rgba(230, 155, 0, 0.12);
+      --white: #1a1c1e;
+      --muted: #5f6670;
+      --muted-2: #8a9099;
+      --shadow: rgba(0, 0, 0, 0.08);
+      --shadow-lg: rgba(0, 0, 0, 0.12);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: var(--font-ar);
+      direction: ltr;
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    [dir="rtl"] body { direction: rtl; }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    h1, h2, h3 { font-family: var(--font-en); }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: inherit;
+    }
+
+    .en { font-family: var(--font-en); letter-spacing: 0.02em; }
+
+    .wrap {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-family: var(--font-en);
+      font-size: 13px;
+      color: var(--teal);
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+
+    .section-head {
+      max-width: 640px;
+      margin-bottom: 48px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 800;
+      margin: 0 0 12px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 17px;
+      margin: 0;
+    }
+
+    section { position: relative; padding: 80px 0; }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--teal);
+      outline-offset: 3px;
+      border-radius: 6px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+      }
+    }
+
+    /* HEADER */
+    #siteHeader {
+      position: fixed;
+      inset-inline: 0;
+      top: 0;
+      z-index: 100;
+      padding: 18px 0;
+      transition: background 0.35s ease, padding 0.35s ease, border-color 0.35s ease;
+      border-bottom: 1px solid transparent;
+    }
+
+    #siteHeader.is-scrolled {
+      background: rgba(10, 11, 12, 0.85);
+      backdrop-filter: blur(14px);
+      padding: 12px 0;
+      border-color: var(--border);
+    }
+
+    [data-theme="light"] #siteHeader.is-scrolled {
+      background: rgba(248, 249, 250, 0.85);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .brand-logo svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .brand-text {
+      font-family: var(--font-en);
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 1.15;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-text span { display: block; font-size: 10px; color: var(--muted); font-weight: 500; letter-spacing: 0.06em; }
+
+    .nav-menu { display: flex; align-items: center; gap: 34px; }
+
+    .nav-menu a {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--muted);
+      transition: color 0.2s ease;
+    }
+    .nav-menu a:hover { color: var(--white); }
+
+    .nav-cta {
+      padding: 10px 22px;
+      background: var(--teal);
+      color: #06110d;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 20px var(--teal-dim); }
+
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: 6px;
+    }
+    .nav-toggle span { width: 22px; height: 2px; background: var(--white); border-radius: 2px; transition: transform 0.25s ease, opacity 0.25s ease; }
+    .nav-toggle.is-active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-toggle.is-active span:nth-child(2) { opacity: 0; }
+    .nav-toggle.is-active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .theme-toggle, .lang-toggle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .theme-toggle:hover, .lang-toggle:hover { color: var(--teal); border-color: var(--teal); }
+    .theme-toggle svg { width: 18px; height: 18px; }
+
+    @media (max-width: 860px) {
+      .nav-toggle { display: flex; }
+      .nav-menu {
+        position: fixed;
+        inset-inline: 0;
+        top: 66px;
+        background: rgba(10, 11, 12, 0.97);
+        backdrop-filter: blur(16px);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 28px 24px 40px;
+        gap: 22px;
+        transform: translateY(-12px);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.25s ease, transform 0.25s ease;
+        border-bottom: 1px solid var(--border);
+      }
+      [data-theme="light"] .nav-menu {
+        background: rgba(248, 249, 250, 0.97);
+      }
+      .nav-menu.is-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+      .nav-menu a { font-size: 18px; }
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 120px;
+      padding-bottom: 60px;
+      background:
+        radial-gradient(60% 50% at 78% 15%, var(--teal-dim), transparent 60%),
+        radial-gradient(45% 40% at 12% 85%, var(--amber-dim), transparent 60%),
+        var(--bg);
+      overflow: hidden;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-copy {
+      animation: heroFadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    .hero-visual {
+      animation: heroFadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+    }
+
+    @keyframes heroFadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-copy .eyebrow { display: flex; align-items: center; gap: 10px; }
+    .hero-copy .eyebrow::before {
+      content: '';
+      width: 28px; height: 1px;
+      background: var(--teal);
+      display: inline-block;
+    }
+
+    .hero-copy h1 {
+      font-size: clamp(38px, 5.6vw, 68px);
+      font-weight: 900;
+      line-height: 1.12;
+      margin: 0 0 22px;
+    }
+
+    .hero-copy h1 .accent { color: var(--teal); }
+
+    .hero-copy p {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 520px;
+      margin: 0 0 34px;
+    }
+
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 15px 30px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 15px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+    .btn-primary { background: var(--teal); color: #06110d; }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 26px var(--teal-dim); }
+    .btn-ghost { border: 1px solid var(--border); color: var(--white); }
+    .btn-ghost:hover { border-color: var(--teal); color: var(--teal); }
+
+    .hero-visual {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .aperture-ring {
+      position: relative;
+      width: min(420px, 80vw);
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .aperture-ring svg { width: 100%; height: 100%; animation: spin 26s linear infinite; }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-visual { order: -1; margin-bottom: 10px; }
+      .aperture-ring { width: min(260px, 55vw); }
+      .hero-copy p { max-width: none; }
+    }
+
+    /* SERVICES */
+    .services { background: var(--bg-soft); border-block: 1px solid var(--border); }
+
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .cat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      text-align: right;
+      transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+    }
+
+    .cat-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--teal);
+      background: var(--surface-2);
+    }
+
+    .cat-icon {
+      width: 56px; height: 56px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 14px;
+      background: var(--teal-dim);
+      color: var(--teal);
+    }
+    .cat-card:nth-child(2) .cat-icon { background: var(--amber-dim); color: var(--amber); }
+
+    .cat-en { font-family: var(--font-en); font-size: 20px; font-weight: 700; color: var(--white); }
+    .cat-desc { font-size: 14px; color: var(--muted); }
+
+    @media (max-width: 540px) { .cat-grid { grid-template-columns: 1fr; } }
+
+    /* WORK / GALLERY */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+
+    .filter-btn {
+      padding: 10px 20px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .filter-btn:hover { color: var(--white); border-color: var(--muted); }
+    .filter-btn.is-active { background: var(--teal); border-color: var(--teal); color: #06110d; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .work-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+    .work-card:hover { transform: translateY(-6px); border-color: var(--teal); }
+
+    .work-cover {
+      aspect-ratio: 16/10;
+      background: linear-gradient(150deg, var(--surface-2), var(--bg-soft));
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .work-cover img { width: 100%; height: 100%; object-fit: cover; }
+    .cover-fallback { width: 40%; color: var(--muted-2); }
+
+    .play-badge {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: #06110d;
+      background: rgba(0,0,0,0.15);
+    }
+    .play-badge::before {
+      content: '';
+      position: absolute;
+      width: 50px; height: 50px;
+      border-radius: 50%;
+      background: var(--teal);
+    }
+    .play-badge { z-index: 1; }
+    .play-badge { color: #06110d; }
+
+    .work-meta { padding: 16px 18px 20px; }
+    .work-meta h3 { font-size: 15px; margin: 0 0 8px; font-weight: 700; }
+    .work-tag { font-size: 12px; color: var(--muted-2); }
+
+    .gallery-empty {
+      grid-column: 1 / -1;
+      text-align: center;
+      color: var(--muted);
+      padding: 60px 20px;
+      border: 1px dashed var(--border);
+      border-radius: var(--radius);
+    }
+
+    @media (max-width: 980px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) { .gallery { grid-template-columns: 1fr; } }
+
+    /* ABOUT */
+    .about { background: var(--bg-soft); border-block: 1px solid var(--border); }
+    .about-inner {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .about-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px;
+      position: relative;
+    }
+    .about-card .quote-mark { font-family: var(--font-en); font-size: 60px; color: var(--teal); line-height: 1; opacity: 0.5; }
+    .about-card p { font-size: 18px; color: var(--white); margin: 10px 0 0; }
+
+    .about-text h2 { font-size: clamp(26px, 3.6vw, 36px); font-weight: 800; margin: 0 0 20px; }
+    .about-text p { color: var(--muted); font-size: 16px; margin: 0 0 16px; max-width: 620px; }
+
+    .about-list { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 26px; }
+    .about-list li { list-style: none; display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--white); }
+    .about-list li::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--teal); flex-shrink: 0; }
+
+    @media (max-width: 860px) {
+      .about-inner { grid-template-columns: 1fr; }
+      .about-list { grid-template-columns: 1fr; }
+    }
+
+    /* CONTACT */
+    .contact {
+      text-align: center;
+    }
+    .contact-box {
+      background: linear-gradient(135deg, var(--surface), var(--surface-2));
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 70px 30px;
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-box::before {
+      content: '';
+      position: absolute;
+      width: 340px; height: 340px;
+      background: radial-gradient(circle, var(--teal-dim), transparent 70%);
+      top: -120px; right: -80px;
+    }
+    .contact-box h2 {
+      font-size: clamp(28px, 4.4vw, 46px);
+      font-weight: 900;
+      margin: 0 0 16px;
+      position: relative;
+    }
+    .contact-box p {
+      color: var(--muted);
+      font-size: 17px;
+      max-width: 480px;
+      margin: 0 auto 34px;
+      position: relative;
+    }
+    .contact-actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    /* FOOTER */
+    footer { padding: 50px 0 30px; border-top: 1px solid var(--border); }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .footer-brand { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 13px; }
+    .footer-social { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    /* MODAL */
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: rgba(6, 7, 8, 0.9);
+      backdrop-filter: blur(6px);
+    }
+    .modal.is-open { display: flex; }
+
+    .modal-content {
+      width: min(920px, 100%);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .modal-body {
+      aspect-ratio: 16/9;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-body iframe, .modal-body video, .modal-body img { width: 100%; height: 100%; object-fit: contain; border: none; }
+    .modal-placeholder { color: var(--muted); text-align: center; padding: 30px; font-size: 14px; }
+
+    .modal-footer {
+      padding: 16px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .modal-footer span { font-weight: 700; font-size: 15px; }
+
+    .modal-close {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      font-size: 16px;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+    }
+    .modal-close:hover { border-color: var(--teal); color: var(--teal); }
+
+    /* LIGHTBOX */
+    .lightbox-frame {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox-frame img { width: 100%; height: 100%; object-fit: contain; }
+
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: rgba(10, 11, 12, 0.65);
+      border: 1px solid var(--border);
+      color: var(--white);
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+    .lightbox-nav:hover { background: var(--teal); color: #06110d; border-color: var(--teal); }
+    .lightbox-nav.prev { right: 16px; }
+    .lightbox-nav.next { left: 16px; }
+
+    /* SOCIAL */
+    .social-link {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      transition: all 0.2s ease;
+    }
+    .social-link svg { width: 17px; height: 17px; }
+    .social-link:hover { color: var(--teal); border-color: var(--teal); }
+
+    [data-social-list] { display: flex; gap: 10px; flex-wrap: wrap; }
+
+    /* CONTACT GRID */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 20px;
+      text-align: right;
+      margin-top: 40px;
+    }
+
+    .contact-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 18px 20px;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+    .contact-row:is(a):hover { border-color: var(--teal); transform: translateY(-2px); }
+
+    .contact-row-icon {
+      width: 42px; height: 42px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      background: var(--teal-dim);
+      color: var(--teal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .contact-row-icon svg { width: 20px; height: 20px; }
+    .contact-row:nth-child(2n) .contact-row-icon { background: var(--amber-dim); color: var(--amber); }
+
+    .contact-row-text { display: flex; flex-direction: column; gap: 2px; }
+    .contact-row-text span:first-child { font-size: 12px; color: var(--muted-2); }
+    .contact-row-text strong { font-size: 15px; font-weight: 700; }
+
+    .contact-side {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .contact-side-block span:first-child { display: block; font-size: 12px; color: var(--muted-2); margin-bottom: 4px; }
+    .contact-side-block strong { font-size: 15px; }
+
+    .contact-social-wrap.is-empty { display: none; }
+    .contact-social-wrap span:first-child { display: block; font-size: 12px; color: var(--muted-2); margin-bottom: 10px; }
+
+    @media (max-width: 860px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="siteHeader">
+    <div class="wrap nav-inner">
+      <a href="file:///C:/Users/Ahmed/OneDrive/Documents/Default%20Project/ahmedallam.pro-main/index.html#hero" class="brand">
+        <div class="brand-logo">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="95" fill="#1a1a1a"></circle>
+            <text x="55" y="135" font-size="90" font-family="Arial,sans-serif" font-weight="900" fill="#00ffc2">A</text>
+            <text x="115" y="135" font-size="90" font-family="Arial,sans-serif" font-weight="900" fill="#ffffff">A</text>
+            <circle cx="85" cy="105" r="20" fill="none" stroke="#ffffff" stroke-width="3"></circle>
+            <path d="M85 85 L85 125 M65 105 L105 105" stroke="#ffffff" stroke-width="2"></path>
+          </svg>
+        </div>
+        <span class="brand-text en" data-i18n="brandName">AHMED ALLAM</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="file:///C:/Users/Ahmed/OneDrive/Documents/Default%20Project/ahmedallam.pro-main/index.html#hero" data-i18n="navHome">Home</a>
+        <a href="file:///C:/Users/Ahmed/OneDrive/Documents/Default%20Project/ahmedallam.pro-main/index.html#services" data-i18n="navServices">Services</a>
+        <a href="file:///C:/Users/Ahmed/OneDrive/Documents/Default%20Project/ahmedallam.pro-main/index.html#work" data-i18n="navWork">Work</a>
+        <a href="file:///C:/Users/Ahmed/OneDrive/Documents/Default%20Project/ahmedallam.pro-main/index.html#about" data-i18n="navAbout">About</a>
+        <a href="file:///C:/Users/Ahmed/OneDrive/Documents/Default%20Project/ahmedallam.pro-main/index.html#contact" class="nav-cta" data-i18n="navCta">Work With Me</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">عربي</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg id="themeIconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: block;"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>
+          <svg id="themeIconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow en" data-i18n="heroEyebrow">CREATIVE VISUAL PRODUCTION</span>
+        <h1><span data-i18n="heroTitle1">Video and photo work that turns your</span> <span class="accent" data-i18n="heroTitleAccent">idea</span> <span data-i18n="heroTitle2">into content people stop for</span></h1>
+        <p data-i18n="heroDesc">I handle video editing and photography from concept to delivery — reels, real estate videos, podcasts, gaming content, and product and ad photography, tailored to every platform.</p>
+        <div class="hero-actions">
+          <a href="file:///C:/Users/Ahmed/OneDrive/Documents/Default%20Project/ahmedallam.pro-main/index.html#work" class="btn btn-primary" data-i18n="heroBtn1">See the Work</a>
+          <a href="file:///C:/Users/Ahmed/OneDrive/Documents/Default%20Project/ahmedallam.pro-main/index.html#contact" class="btn btn-ghost" data-i18n="heroBtn2">Book a Consult</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="aperture-ring">
+          <svg viewBox="0 0 200 200" fill="none">
+            <circle cx="100" cy="100" r="90" stroke="#2a2c30" stroke-width="1.5"></circle>
+            <circle cx="100" cy="100" r="46" stroke="#ffb800" stroke-width="2"></circle>
+            <circle cx="100" cy="100" r="4" fill="#00ffc2"></circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow en" data-i18n="servicesEyebrow">WHAT I DO</span>
+        <h2 data-i18n="servicesTitle">Areas of Work</h2>
+        <p data-i18n="servicesDesc">Tap any category to see examples of that kind of work.</p>
+      </div>
+      <div class="cat-grid" id="categoryGrid"><button class="cat-card" data-filter="editing" style="--i: 0;">
+          <span class="cat-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="28" rx="3"></rect><path d="M6 18h36"></path><circle cx="14" cy="14" r="1.5"></circle><circle cx="20" cy="14" r="1.5"></circle><path d="M14 26l6 4-6 4v-8z" fill="currentColor" stroke="none"></path></svg></span>
+          <span class="cat-en en">Video Editing</span>
+          <span class="cat-desc">Reels, real estate videos, podcasts, gaming content, and long-form video editing.</span>
+        </button><button class="cat-card" data-filter="photography" style="--i: 1;">
+          <span class="cat-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="14" width="32" height="24" rx="3"></rect><circle cx="24" cy="26" r="8"></circle><path d="M18 14l3-6h6l3 6"></path></svg></span>
+          <span class="cat-en en">Content Photography</span>
+          <span class="cat-desc">Product photography, ad photography, and visual content creation.</span>
+        </button></div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow en" data-i18n="workEyebrow">SELECTED WORK</span>
+        <h2 data-i18n="workTitle">Work Gallery</h2>
+        <p data-i18n="workDesc">Filter by category, and click any piece to preview it.</p>
+      </div>
+      <div class="filter-bar" id="filterBar"><button class="filter-btn is-active" data-filter="all">All</button><button class="filter-btn" data-filter="editing">Video Editing <span class="count">5</span></button><button class="filter-btn" data-filter="photography">Content Photography <span class="count">3</span></button></div>
+      <div class="gallery" id="gallery"><div class="work-card is-featured" style="--i: 0;">
+          <div class="work-cover">
+            <span class="cover-fallback"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="28" rx="3"></rect><path d="M6 18h36"></path><circle cx="14" cy="14" r="1.5"></circle><circle cx="20" cy="14" r="1.5"></circle><path d="M14 26l6 4-6 4v-8z" fill="currentColor" stroke="none"></path></svg></span>
+            <span class="play-badge">▶</span>
+            
+          </div>
+          <div class="work-meta">
+            <h3>Real Estate Reel — Ready-to-Move Apartment</h3>
+            <span class="work-tag">Video Editing</span>
+          </div>
+        </div><div class="work-card" style="--i: 1;">
+          <div class="work-cover">
+            <span class="cover-fallback"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="28" rx="3"></rect><path d="M6 18h36"></path><circle cx="14" cy="14" r="1.5"></circle><circle cx="20" cy="14" r="1.5"></circle><path d="M14 26l6 4-6 4v-8z" fill="currentColor" stroke="none"></path></svg></span>
+            <span class="play-badge">▶</span>
+            
+          </div>
+          <div class="work-meta">
+            <h3>Booking App UI — Motion Walkthrough</h3>
+            <span class="work-tag">Video Editing</span>
+          </div>
+        </div><div class="work-card" style="--i: 2;">
+          <div class="work-cover">
+            <span class="cover-fallback"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="28" rx="3"></rect><path d="M6 18h36"></path><circle cx="14" cy="14" r="1.5"></circle><circle cx="20" cy="14" r="1.5"></circle><path d="M14 26l6 4-6 4v-8z" fill="currentColor" stroke="none"></path></svg></span>
+            <span class="play-badge">▶</span>
+            
+          </div>
+          <div class="work-meta">
+            <h3>Marketing Video — Residential Project</h3>
+            <span class="work-tag">Video Editing</span>
+          </div>
+        </div><div class="work-card" style="--i: 3;">
+          <div class="work-cover">
+            <span class="cover-fallback"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="28" rx="3"></rect><path d="M6 18h36"></path><circle cx="14" cy="14" r="1.5"></circle><circle cx="20" cy="14" r="1.5"></circle><path d="M14 26l6 4-6 4v-8z" fill="currentColor" stroke="none"></path></svg></span>
+            <span class="play-badge">▶</span>
+            
+          </div>
+          <div class="work-meta">
+            <h3>Podcast — Full Episode</h3>
+            <span class="work-tag">Video Editing</span>
+          </div>
+        </div><div class="work-card" style="--i: 4;">
+          <div class="work-cover">
+            <span class="cover-fallback"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="28" rx="3"></rect><path d="M6 18h36"></path><circle cx="14" cy="14" r="1.5"></circle><circle cx="20" cy="14" r="1.5"></circle><path d="M14 26l6 4-6 4v-8z" fill="currentColor" stroke="none"></path></svg></span>
+            <span class="play-badge">▶</span>
+            
+          </div>
+          <div class="work-meta">
+            <h3>Long-form Video — Game Playthrough</h3>
+            <span class="work-tag">Video Editing</span>
+          </div>
+        </div><div class="work-card" style="--i: 5;">
+          <div class="work-cover">
+            <span class="cover-fallback"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="14" width="32" height="24" rx="3"></rect><circle cx="24" cy="26" r="8"></circle><path d="M18 14l3-6h6l3 6"></path></svg></span>
+            
+            <span class="gallery-badge">0 photos</span>
+          </div>
+          <div class="work-meta">
+            <h3>Product Photography — Perfume</h3>
+            <span class="work-tag">Content Photography</span>
+          </div>
+        </div><div class="work-card" style="--i: 0;">
+          <div class="work-cover">
+            <span class="cover-fallback"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="14" width="32" height="24" rx="3"></rect><circle cx="24" cy="26" r="8"></circle><path d="M18 14l3-6h6l3 6"></path></svg></span>
+            <span class="play-badge">▶</span>
+            
+          </div>
+          <div class="work-meta">
+            <h3>Commercial Ad — 30 Seconds</h3>
+            <span class="work-tag">Content Photography</span>
+          </div>
+        </div><div class="work-card" style="--i: 1;">
+          <div class="work-cover">
+            <span class="cover-fallback"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="14" width="32" height="24" rx="3"></rect><circle cx="24" cy="26" r="8"></circle><path d="M18 14l3-6h6l3 6"></path></svg></span>
+            
+            
+          </div>
+          <div class="work-meta">
+            <h3>Product Poster Design</h3>
+            <span class="work-tag">Content Photography</span>
+          </div>
+        </div></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap about-inner">
+      <div class="about-card">
+        <span class="quote-mark en">“</span>
+        <p data-i18n="aboutQuote">Every video tells a story — my job is to tell it as well as it deserves.</p>
+      </div>
+      <div class="about-text">
+        <span class="eyebrow en" data-i18n="aboutEyebrow">ABOUT</span>
+        <h2 data-i18n="aboutTitle">Ahmed Allam — Video Editor &amp; Visual Content Creator</h2>
+        <p data-i18n="aboutDesc1">I work with brands and content creators who need editing and photography that actually makes a difference — from fast-paced reels to long-form video, plus design and photography for product and ad stills.</p>
+        <p data-i18n="aboutDesc2">Every detail in a video or photo is chosen to serve its purpose: growing on social media, selling a product, or convincing a client to book a property.</p>
+        <ul class="about-list">
+          <li data-i18n="aboutList1">Reels &amp; UI Editing</li>
+          <li data-i18n="aboutList2">Drone Real Estate Videos</li>
+          <li data-i18n="aboutList3">Podcasts &amp; Long-form Video</li>
+          <li data-i18n="aboutList4">Gaming Content</li>
+          <li data-i18n="aboutList5">Image Design</li>
+          <li data-i18n="aboutList6">Product &amp; Ad Photography</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-box">
+        <span class="eyebrow en" data-i18n="contactEyebrow">WORK WITH ME</span>
+        <h2 data-i18n="contactTitle">Have a project ready to start?</h2>
+        <p data-i18n="contactDesc">Send me the details now and I'll get back to you with a plan and a clear timeline.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-rows">
+          <a href="mailto:hello@ahmedallam.pro" id="contactEmailLink" class="contact-row">
+            <span class="contact-row-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="3"></rect><path d="M4 7l8 6 8-6"></path></svg>
+            </span>
+            <span class="contact-row-text">
+              <span data-i18n="contactEmailLabel">Email</span>
+              <strong id="contactEmailText">hello@ahmedallam.pro</strong>
+            </span>
+          </a>
+
+          <a href="https://wa.me/201122633425" id="contactWhatsapp" target="_blank" rel="noopener" class="contact-row">
+            <span class="contact-row-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4A8 8 0 1 1 9 19.4L4 20Z"></path><path d="M9 10.5c.3 2 2.2 3.9 4.2 4.2M9 10.5c-.2-1 .7-1.5.9-1.1.3.4.7 1.2.5 1.6-.3.6-1 .6-1.4-.1Z"></path></svg>
+            </span>
+            <span class="contact-row-text">
+              <span data-i18n="contactWhatsappLabel">WhatsApp — fastest reply</span>
+              <strong id="contactPhoneText">+20 112 263 3425</strong>
+            </span>
+          </a>
+        </div>
+
+        <div class="contact-side">
+          <div class="contact-side-block">
+            <span data-i18n="contactLocationLabel">Location</span>
+            <strong id="contactLocation">Cairo, Egypt</strong>
+          </div>
+          <div class="contact-side-block">
+            <span data-i18n="contactResponseLabel">Response time</span>
+            <strong id="contactResponse">Replies within 24 hours</strong>
+          </div>
+          <div class="contact-side-block contact-social-wrap">
+            <span data-i18n="contactFollowLabel">Follow</span>
+            <div data-social-list=""><a class="social-link" href="https://www.instagram.com/ahmedallam.pro/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1"></circle></svg></a><a class="social-link" href="https://www.facebook.com/profile.php?id=61593950945065" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 8h-2a2 2 0 0 0-2 2v10M9 13h4"></path><circle cx="12" cy="12" r="9.5"></circle></svg></a><a class="social-link" href="https://www.linkedin.com/in/ahmed-allam-pro-b57826433/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"></rect><line x1="7.5" y1="10.5" x2="7.5" y2="16.5"></line><circle cx="7.5" cy="7.3" r="1"></circle><path d="M11.5 16.5V11m0 0c0-1.4 1-2 2.2-2 1.4 0 1.8 1 1.8 2.4v4.6"></path></svg></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <div class="brand-logo" style="width: 28px; height: 28px;">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="95" fill="#1a1a1a"></circle>
+            <text x="55" y="135" font-size="90" font-family="Arial,sans-serif" font-weight="900" fill="#00ffc2">A</text>
+            <text x="115" y="135" font-size="90" font-family="Arial,sans-serif" font-weight="900" fill="#ffffff">A</text>
+            <circle cx="85" cy="105" r="20" fill="none" stroke="#ffffff" stroke-width="3"></circle>
+            <path d="M85 85 L85 125 M65 105 L105 105" stroke="#ffffff" stroke-width="2"></path>
+          </svg>
+        </div>
+        <span class="en">© <span id="year">2026</span> <span data-i18n="footerRights">Ahmed Allam Pro. All rights reserved.</span></span>
+      </div>
+      <div class="footer-social" data-social-list=""><a class="social-link" href="https://www.instagram.com/ahmedallam.pro/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1"></circle></svg></a><a class="social-link" href="https://www.facebook.com/profile.php?id=61593950945065" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 8h-2a2 2 0 0 0-2 2v10M9 13h4"></path><circle cx="12" cy="12" r="9.5"></circle></svg></a><a class="social-link" href="https://www.linkedin.com/in/ahmed-allam-pro-b57826433/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"></rect><line x1="7.5" y1="10.5" x2="7.5" y2="16.5"></line><circle cx="7.5" cy="7.3" r="1"></circle><path d="M11.5 16.5V11m0 0c0-1.4 1-2 2.2-2 1.4 0 1.8 1 1.8 2.4v4.6"></path></svg></a></div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-footer">
+        <span id="modalCaption"></span>
+        <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ==================== TRANSLATIONS ====================
+    const TRANSLATIONS = {
+      en: {
+        brandName: "AHMED ALLAM",
+        brandTag: "CREATIVE VISUAL PRODUCTION",
+        navHome: "Home",
+        navServices: "Services",
+        navWork: "Work",
+        navAbout: "About",
+        navCta: "Work With Me",
+        heroEyebrow: "CREATIVE VISUAL PRODUCTION",
+        heroTitle1: "Video and photo work that turns your",
+        heroTitleAccent: "idea",
+        heroTitle2: "into content people stop for",
+        heroDesc: "I handle video editing and photography from concept to delivery — reels, real estate videos, podcasts, gaming content, and product and ad photography, tailored to every platform.",
+        heroBtn1: "See the Work",
+        heroBtn2: "Book a Consult",
+        servicesEyebrow: "WHAT I DO",
+        servicesTitle: "Areas of Work",
+        servicesDesc: "Tap any category to see examples of that kind of work.",
+        workEyebrow: "SELECTED WORK",
+        workTitle: "Work Gallery",
+        workDesc: "Filter by category, and click any piece to preview it.",
+        aboutQuote: "Every video tells a story — my job is to tell it as well as it deserves.",
+        aboutEyebrow: "ABOUT",
+        aboutTitle: "Ahmed Allam — Video Editor & Visual Content Creator",
+        aboutDesc1: "I work with brands and content creators who need editing and photography that actually makes a difference — from fast-paced reels to long-form video, plus design and photography for product and ad stills.",
+        aboutDesc2: "Every detail in a video or photo is chosen to serve its purpose: growing on social media, selling a product, or convincing a client to book a property.",
+        aboutList1: "Reels & UI Editing",
+        aboutList2: "Drone Real Estate Videos",
+        aboutList3: "Podcasts & Long-form Video",
+        aboutList4: "Gaming Content",
+        aboutList5: "Image Design",
+        aboutList6: "Product & Ad Photography",
+        contactEyebrow: "WORK WITH ME",
+        contactTitle: "Have a project ready to start?",
+        contactDesc: "Send me the details now and I'll get back to you with a plan and a clear timeline.",
+        contactEmailLabel: "Email",
+        contactWhatsappLabel: "WhatsApp — fastest reply",
+        contactLocationLabel: "Location",
+        contactResponseLabel: "Response time",
+        contactFollowLabel: "Follow",
+        footerRights: "Ahmed Allam Pro. All rights reserved.",
+        cat1Title: "Video Editing",
+        cat1Desc: "Reels, real estate videos, podcasts, gaming content, and long-form video editing.",
+        cat2Title: "Content Photography",
+        cat2Desc: "Product photography, ad photography, and visual content creation.",
+        filterAll: "All",
+      },
+      ar: {
+        brandName: "أحمد علام",
+        brandTag: "إنتاج بصري إبداعي",
+        navHome: "الرئيسية",
+        navServices: "الخدمات",
+        navWork: "الأعمال",
+        navAbout: "عني",
+        navCta: "اعمل معايا",
+        heroEyebrow: "إنتاج بصري إبداعي",
+        heroTitle1: "شغل فيديو وتصوير بيحول",
+        heroTitleAccent: "فكرتك",
+        heroTitle2: "لمحتوى الناس بتقف عنده",
+        heroDesc: "بعمل مونتاج فيديو وتصوير من الفكرة للتسليم — ريلز، فيديوهات عقارات، بودكاست، محتوى جيمنج، وتصوير منتجات وإعلانات، مخصص لكل منصة.",
+        heroBtn1: "شوف الأعمال",
+        heroBtn2: "احجز استشارة",
+        servicesEyebrow: "إيه اللي بعمله",
+        servicesTitle: "مجالات العمل",
+        servicesDesc: "دوس على أي قسم عشان تشوف أمثلة من الشغل ده.",
+        workEyebrow: "أعمال مختارة",
+        workTitle: "معرض الأعمال",
+        workDesc: "فلتر حسب القسم، ودوس على أي عمل عشان تشوفه.",
+        aboutQuote: "كل فيديو بيحكي قصة — وظيفتي إني أحكيها كما تستحق.",
+        aboutEyebrow: "عني",
+        aboutTitle: "أحمد علام — مونتير ومنشئ محتوى بصري",
+        aboutDesc1: "بشتغل مع براندات وصناع محتوى محتاجين مونتاج وتصوير بيفرق فعلاً — من ريلز سريعة لفيديوهات طويلة، بالإضافة لتصميم وتصوير منتجات وإعلانات.",
+        aboutDesc2: "كل تفصيلة في الفيديو أو الصورة بتختار عشان تخدم هدفها: النمو على السوشيال ميديا، بيع منتج، أو إقناع عميل بحجز عقار.",
+        aboutList1: "ريلز ومونتاج UI",
+        aboutList2: "فيديوهات عقارات بالدرون",
+        aboutList3: "بودكاست وفيديوهات طويلة",
+        aboutList4: "محتوى جيمنج",
+        aboutList5: "تصميم صور",
+        aboutList6: "تصوير منتجات وإعلانات",
+        contactEyebrow: "اعمل معايا",
+        contactTitle: "عندك مشروع جاهز يبدأ؟",
+        contactDesc: "ابعتلي التفاصيل دلوقتي وهرد عليك بخطة ووقت واضح.",
+        contactEmailLabel: "إيميل",
+        contactWhatsappLabel: "واتساب — أسرع رد",
+        contactLocationLabel: "الموقع",
+        contactResponseLabel: "وقت الرد",
+        contactFollowLabel: "تابعني",
+        footerRights: "أحمد علام برو. جميع الحقوق محفوظة.",
+        cat1Title: "مونتاج المحتوى",
+        cat1Desc: "ريلز، فيديوهات عقارات، بودكاست، محتوى جيمنج، ومونتاج فيديوهات طويلة.",
+        cat2Title: "تصوير المحتوى",
+        cat2Desc: "تصوير منتجات، تصوير إعلانات، وإنشاء محتوى بصري.",
+        filterAll: "الكل",
+      }
+    };
+
+    let currentLang = localStorage.getItem("lang") || "en";
+
+    function applyLanguage(lang) {
+      currentLang = lang;
+      localStorage.setItem("lang", lang);
+      const t = TRANSLATIONS[lang];
+      const html = document.documentElement;
+
+      if (lang === "ar") {
+        html.setAttribute("dir", "rtl");
+        html.setAttribute("lang", "ar");
+      } else {
+        html.setAttribute("dir", "ltr");
+        html.setAttribute("lang", "en");
+      }
+
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (t[key]) el.textContent = t[key];
+      });
+
+      document.getElementById("langToggle").textContent = lang === "en" ? "عربي" : "EN";
+
+      renderCategoryGrid();
+      renderFilters();
+      renderGallery("all");
+    }
+
+    // ==================== CONFIG ====================
+    const SITE_CONFIG = {
+      email: "hello@ahmedallam.pro",
+      phoneDisplay: "+20 112 263 3425",
+      whatsappNumber: "201122633425",
+      social: {
+        instagram: "https://www.instagram.com/ahmedallam.pro/",
+        tiktok: "",
+        youtube: "",
+        behance: "",
+        facebook: "https://www.facebook.com/profile.php?id=61593950945065",
+        linkedin: "https://www.linkedin.com/in/ahmed-allam-pro-b57826433/",
+      },
+      location: "Cairo, Egypt",
+      responseTime: "Replies within 24 hours",
+    };
+
+    const PORTFOLIO_ITEMS = [
+      {
+        title: "Real Estate Reel — Ready-to-Move Apartment",
+        category: "editing",
+        type: "youtube",
+        src: "",
+        thumbnail: "",
+        featured: true,
+      },
+      {
+        title: "Booking App UI — Motion Walkthrough",
+        category: "editing",
+        type: "youtube",
+        src: "",
+        thumbnail: "",
+      },
+      {
+        title: "Marketing Video — Residential Project",
+        category: "editing",
+        type: "vimeo",
+        src: "",
+        thumbnail: "",
+      },
+      {
+        title: "Podcast — Full Episode",
+        category: "editing",
+        type: "youtube",
+        src: "",
+        thumbnail: "",
+      },
+      {
+        title: "Long-form Video — Game Playthrough",
+        category: "editing",
+        type: "youtube",
+        src: "",
+        thumbnail: "",
+      },
+      {
+        title: "Product Photography — Perfume",
+        category: "photography",
+        type: "gallery",
+        images: [],
+        thumbnail: "",
+      },
+      {
+        title: "Commercial Ad — 30 Seconds",
+        category: "photography",
+        type: "youtube",
+        src: "",
+        thumbnail: "",
+      },
+      {
+        title: "Product Poster Design",
+        category: "photography",
+        type: "image",
+        src: "",
+        thumbnail: "",
+      },
+    ];
+
+    const CATEGORIES = [
+      { id: "editing", en: "Video Editing", ar: "مونتاج المحتوى", icon: "editing" },
+      { id: "photography", en: "Content Photography", ar: "تصوير المحتوى", icon: "photography" },
+    ];
+
+    const ICONS = {
+      editing: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="28" rx="3"/><path d="M6 18h36"/><circle cx="14" cy="14" r="1.5"/><circle cx="20" cy="14" r="1.5"/><path d="M14 26l6 4-6 4v-8z" fill="currentColor" stroke="none"/></svg>`,
+      photography: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="14" width="32" height="24" rx="3"/><circle cx="24" cy="26" r="8"/><path d="M18 14l3-6h6l3 6"/></svg>`,
+    };
+
+    const SOCIAL_ICONS = {
+      instagram: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>`,
+      tiktok: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46"/><path d="M14 4c.4 2.3 2.2 4 4.5 4.2"/></svg>`,
+      youtube: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="6" width="19" height="12" rx="4"/><path d="M10.5 9.5v5l4.5-2.5-4.5-2.5Z" fill="currentColor" stroke="none"/></svg>`,
+      behance: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="7" width="8" height="7" rx="1.5"/><path d="M2.5 14h8"/><circle cx="17" cy="12.5" r="4"/></svg>`,
+      facebook: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 8h-2a2 2 0 0 0-2 2v10M9 13h4"/><circle cx="12" cy="12" r="9.5"/></svg>`,
+      linkedin: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="7.5" y1="10.5" x2="7.5" y2="16.5"/><circle cx="7.5" cy="7.3" r="1"/><path d="M11.5 16.5V11m0 0c0-1.4 1-2 2.2-2 1.4 0 1.8 1 1.8 2.4v4.6"/></svg>`,
+    };
+
+    const SOCIAL_LABELS = {
+      instagram: "Instagram", tiktok: "TikTok", youtube: "YouTube",
+      behance: "Behance", facebook: "Facebook", linkedin: "LinkedIn",
+    };
+
+    const el = (tag, cls, html) => {
+      const node = document.createElement(tag);
+      if (cls) node.className = cls;
+      if (html !== undefined) node.innerHTML = html;
+      return node;
+    };
+
+    let currentGalleryImages = [];
+    let currentGalleryIndex = 0;
+
+    function renderCategoryGrid() {
+      const grid = document.getElementById("categoryGrid");
+      if (!grid) return;
+      grid.innerHTML = "";
+      const t = TRANSLATIONS[currentLang];
+      CATEGORIES.forEach((cat, i) => {
+        const card = el("button", "cat-card");
+        card.style.setProperty("--i", i);
+        card.setAttribute("data-filter", cat.id);
+        card.innerHTML = `
+          <span class="cat-icon">${ICONS[cat.icon]}</span>
+          <span class="cat-en en">${currentLang === "ar" ? cat.ar : cat.en}</span>
+          <span class="cat-desc">${i === 0 ? t.cat1Desc : t.cat2Desc}</span>
+        `;
+        card.addEventListener("click", () => goToWork(cat.id));
+        grid.appendChild(card);
+      });
+    }
+
+    function renderFilters() {
+      const bar = document.getElementById("filterBar");
+      if (!bar) return;
+      bar.innerHTML = "";
+      const t = TRANSLATIONS[currentLang];
+      const allBtn = el("button", "filter-btn is-active", t.filterAll);
+      allBtn.setAttribute("data-filter", "all");
+      bar.appendChild(allBtn);
+
+      CATEGORIES.forEach((cat) => {
+        const count = PORTFOLIO_ITEMS.filter((i) => i.category === cat.id).length;
+        if (count === 0) return;
+        const btn = el("button", "filter-btn", `${currentLang === "ar" ? cat.ar : cat.en} <span class="count">${count}</span>`);
+        btn.setAttribute("data-filter", cat.id);
+        bar.appendChild(btn);
+      });
+
+      bar.addEventListener("click", (e) => {
+        const btn = e.target.closest(".filter-btn");
+        if (!btn) return;
+        bar.querySelectorAll(".filter-btn").forEach((b) => b.classList.remove("is-active"));
+        btn.classList.add("is-active");
+        renderGallery(btn.getAttribute("data-filter"));
+      });
+    }
+
+    function coverMarkup(item, catInfo) {
+      if (item.type === "gallery" && item.images && item.images.length) {
+        return `<img src="${item.images[0]}" alt="${item.title}" loading="lazy">`;
+      }
+      if (item.thumbnail) {
+        return `<img src="${item.thumbnail}" alt="${item.title}" loading="lazy">`;
+      }
+      return `<span class="cover-fallback">${ICONS[catInfo ? catInfo.icon : "editing"]}</span>`;
+    }
+
+    function renderGallery(filter = "all") {
+      const gallery = document.getElementById("gallery");
+      if (!gallery) return;
+      gallery.innerHTML = "";
+
+      let items = PORTFOLIO_ITEMS.filter((it) => filter === "all" || it.category === filter);
+      if (filter === "all") {
+        items = [...items].sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+      }
+
+      if (items.length === 0) {
+        gallery.appendChild(el("p", "gallery-empty", currentLang === "ar" ? "مفيش شغل مرفوع في القسم ده لسه." : "No work uploaded in this category yet."));
+        return;
+      }
+
+      items.forEach((item, i) => {
+        const catInfo = CATEGORIES.find((c) => c.id === item.category);
+        const card = el("div", item.featured ? "work-card is-featured" : "work-card");
+        card.style.setProperty("--i", i % 6);
+
+        const isPlayable = item.type === "youtube" || item.type === "vimeo" || item.type === "video";
+        const isGallery = item.type === "gallery";
+
+        card.innerHTML = `
+          <div class="work-cover">
+            ${coverMarkup(item, catInfo)}
+            ${isPlayable ? '<span class="play-badge">&#9654;</span>' : ""}
+            ${isGallery ? `<span class="gallery-badge">${item.images ? item.images.length : 0} photos</span>` : ""}
+          </div>
+          <div class="work-meta">
+            <h3>${item.title}</h3>
+            <span class="work-tag">${catInfo ? (currentLang === "ar" ? catInfo.ar : catInfo.en) : ""}</span>
+          </div>
+        `;
+
+        card.addEventListener("click", () => openModal(item));
+        gallery.appendChild(card);
+      });
+    }
+
+    function galleryFrame(src) {
+      return `
+        <div class="lightbox-frame">
+          <img src="${src}" alt="">
+          <button class="lightbox-nav prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+          <button class="lightbox-nav next" id="lbNext" aria-label="Next">&#8250;</button>
+        </div>
+      `;
+    }
+
+    function bindLightboxNav() {
+      const prev = document.getElementById("lbPrev");
+      const next = document.getElementById("lbNext");
+      if (prev) prev.addEventListener("click", (e) => { e.stopPropagation(); stepGallery(-1); });
+      if (next) next.addEventListener("click", (e) => { e.stopPropagation(); stepGallery(1); });
+    }
+
+    function stepGallery(dir) {
+      if (!currentGalleryImages.length) return;
+      currentGalleryIndex = (currentGalleryIndex + dir + currentGalleryImages.length) % currentGalleryImages.length;
+      document.getElementById("modalBody").innerHTML = galleryFrame(currentGalleryImages[currentGalleryIndex]);
+      bindLightboxNav();
+    }
+
+    function openModal(item) {
+      const modal = document.getElementById("modal");
+      const body = document.getElementById("modalBody");
+      const caption = document.getElementById("modalCaption");
+      body.innerHTML = "";
+      currentGalleryImages = [];
+
+      if (item.type === "youtube" && item.src) {
+        body.innerHTML = `<iframe src="https://www.youtube.com/embed/${item.src}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+      } else if (item.type === "vimeo" && item.src) {
+        body.innerHTML = `<iframe src="https://player.vimeo.com/video/${item.src}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+      } else if (item.type === "video" && item.src) {
+        body.innerHTML = `<video src="${item.src}" controls autoplay></video>`;
+      } else if (item.type === "image" && item.src) {
+        body.innerHTML = `<img src="${item.src}" alt="${item.title}">`;
+      } else if (item.type === "gallery" && item.images && item.images.length) {
+        currentGalleryImages = item.images;
+        currentGalleryIndex = 0;
+        body.innerHTML = galleryFrame(currentGalleryImages[0]);
+        bindLightboxNav();
+      } else {
+        body.innerHTML = `<div class="modal-placeholder">${currentLang === "ar" ? "مفيش معاينة متضافة لسه" : "No preview added yet"}</div>`;
+      }
+
+      caption.textContent = item.title;
+      modal.classList.add("is-open");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal() {
+      const modal = document.getElementById("modal");
+      document.getElementById("modalBody").innerHTML = "";
+      modal.classList.remove("is-open");
+      document.body.style.overflow = "";
+      currentGalleryImages = [];
+    }
+
+    function renderContact() {
+      if (typeof SITE_CONFIG === "undefined") return;
+
+      const emailLink = document.getElementById("contactEmailLink");
+      const emailText = document.getElementById("contactEmailText");
+      if (SITE_CONFIG.email) {
+        emailLink.href = `mailto:${SITE_CONFIG.email}`;
+        emailText.textContent = SITE_CONFIG.email;
+      }
+
+      const waLink = document.getElementById("contactWhatsapp");
+      if (SITE_CONFIG.whatsappNumber) {
+        waLink.href = `https://wa.me/${SITE_CONFIG.whatsappNumber}`;
+      }
+
+      const phoneText = document.getElementById("contactPhoneText");
+      if (phoneText && SITE_CONFIG.phoneDisplay) phoneText.textContent = SITE_CONFIG.phoneDisplay;
+
+      const locationText = document.getElementById("contactLocation");
+      if (locationText && SITE_CONFIG.location) locationText.textContent = SITE_CONFIG.location;
+
+      const responseText = document.getElementById("contactResponse");
+      if (responseText && SITE_CONFIG.responseTime) responseText.textContent = SITE_CONFIG.responseTime;
+
+      const socialTargets = document.querySelectorAll("[data-social-list]");
+      socialTargets.forEach((wrap) => {
+        wrap.innerHTML = "";
+        Object.entries(SITE_CONFIG.social || {}).forEach(([key, url]) => {
+          if (!url) return;
+          const a = el("a", "social-link", SOCIAL_ICONS[key] || "");
+          a.href = url;
+          a.target = "_blank";
+          a.rel = "noopener";
+          a.setAttribute("aria-label", SOCIAL_LABELS[key] || key);
+          wrap.appendChild(a);
+        });
+        if (!wrap.children.length) {
+          wrap.parentElement.classList.add("is-empty");
+        }
+      });
+    }
+
+    function goToWork(filterId) {
+      const target = document.getElementById("work");
+      target.scrollIntoView({ behavior: "smooth" });
+      setTimeout(() => {
+        const btn = document.querySelector(`.filter-btn[data-filter="${filterId}"]`);
+        if (btn) btn.click();
+      }, 400);
+    }
+
+    function initNav() {
+      const toggle = document.getElementById("navToggle");
+      const menu = document.getElementById("navMenu");
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("is-open");
+        toggle.classList.toggle("is-active");
+      });
+      menu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.remove("is-open");
+          toggle.classList.remove("is-active");
+        });
+      });
+    }
+
+    function initModalEvents() {
+      document.getElementById("modalClose").addEventListener("click", closeModal);
+      document.getElementById("modal").addEventListener("click", (e) => {
+        if (e.target.id === "modal") closeModal();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (!document.getElementById("modal").classList.contains("is-open")) return;
+        if (e.key === "Escape") closeModal();
+        if (e.key === "ArrowLeft") stepGallery(1);
+        if (e.key === "ArrowRight") stepGallery(-1);
+      });
+    }
+
+    function initYear() {
+      document.getElementById("year").textContent = new Date().getFullYear();
+    }
+
+    function initHeaderScroll() {
+      const header = document.getElementById("siteHeader");
+      window.addEventListener("scroll", () => {
+        header.classList.toggle("is-scrolled", window.scrollY > 20);
+      });
+    }
+
+    function initTheme() {
+      const toggle = document.getElementById("themeToggle");
+      const sunIcon = document.getElementById("themeIconSun");
+      const moonIcon = document.getElementById("themeIconMoon");
+      const html = document.documentElement;
+
+      const savedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+
+      html.setAttribute("data-theme", initialTheme);
+      updateThemeIcon(initialTheme);
+
+      toggle.addEventListener("click", () => {
+        const current = html.getAttribute("data-theme");
+        const next = current === "dark" ? "light" : "dark";
+        html.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+        updateThemeIcon(next);
+      });
+
+      function updateThemeIcon(theme) {
+        if (theme === "dark") {
+          sunIcon.style.display = "none";
+          moonIcon.style.display = "block";
+        } else {
+          sunIcon.style.display = "block";
+          moonIcon.style.display = "none";
+        }
+      }
+    }
+
+    function initLang() {
+      const toggle = document.getElementById("langToggle");
+      toggle.addEventListener("click", () => {
+        const next = currentLang === "en" ? "ar" : "en";
+        applyLanguage(next);
+      });
+      applyLanguage(currentLang);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      initLang();
+      renderCategoryGrid();
+      renderFilters();
+      renderGallery("all");
+      renderContact();
+      initNav();
+      initModalEvents();
+      initYear();
+      initHeaderScroll();
+      initTheme();
+    });
+  </script>
+
+
+</body></html>
